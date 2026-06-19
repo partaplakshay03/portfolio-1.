@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Lakshay Pratap Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #475569;
+      --accent: #2563eb;
+      --border: #e2e8f0;
+      --bg-light: #f8fafc;
+    }
+    
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--primary);
+      line-height: 1.5;
+      padding: 3rem 2rem;
+      background: #f1f5f9;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+    }
+
+    header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .header-left h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+      margin-bottom: 0.2rem;
+    }
+
+    .header-left h2 {
+      font-size: 1.1rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+    .header-right p {
+      margin-bottom: 0.2rem;
+    }
+
+    .header-right a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    p.summary {
+      color: var(--secondary);
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+
+    .experience-item, .project-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .item-subheader {
+      display: flex;
+      justify-content: space-between;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    ul.bullets {
+      padding-left: 1.2rem;
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+    ul.bullets li {
+      margin-bottom: 0.3rem;
+      text-align: justify;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .skill-col h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .skill-col p {
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+    .btn-print {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto 0;
+      font-family: 'Outfit', sans-serif;
+      background: var(--accent);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+
+    .btn-print:hover {
+      background: #1d4ed8;
+      transform: translateY(-1px);
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .resume-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .btn-print {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      .resume-container {
+        padding: 2rem 1.5rem;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .header-right {
+        text-align: left;
+      }
+      .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-container">
+    <header>
+      <div class="header-left">
+        <h1>Lakshay Pratap Singh</h1>
+        <h2>Full Stack & MERN Stack Developer</h2>
+      </div>
+      <div class="header-right">
+        <p>📍 Haryana, India</p>
+        <p>📞 <a href="tel:+919817480958">+91 98174 80958</a></p>
+        <p>✉ <a href="mailto:partaplakshay03@gmail.com">partaplakshay03@gmail.com</a></p>
+        <p>🌐 <a href="https://github.com/lakshay-pratap" target="_blank">github.com/lakshay-pratap</a></p>
+      </div>
+    </header>
+
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <p class="summary">
+        Passionate and solution-oriented Full Stack Developer specializing in the MERN Stack. Experienced in building modern, responsive, and SEO-optimized web architectures. Proven ability to construct high-performance single-page applications and relational/non-relational database structures. Currently refining problem-solving and software design standards as an Intern at HARTRON Advanced Skill Center.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Experience</div>
+      <div class="experience-item">
+        <div class="item-header">
+          <span>Web Development Intern</span>
+          <span>2025 - Present</span>
+        </div>
+        <div class="item-subheader">
+          <span>HARTRON Advanced Skill Center</span>
+          <span>Haryana, India</span>
+        </div>
+        <ul class="bullets">
+          <li>Working on full-stack web development projects utilizing Node.js, Express, React, and databases.</li>
+          <li>Constructing lightweight, highly responsive, and accessible client interfaces.</li>
+          <li>Gaining hands-on knowledge in software engineering practices, source control workflows, and REST design.</li>
+          <li>Collaborating with cross-functional members to design database queries and backend route validations.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <div class="skills-grid">
+        <div class="skill-col">
+          <h4>Frontend</h4>
+          <p>HTML5, CSS3, JavaScript (ES6+), React, Tailwind CSS</p>
+        </div>
+        <div class="skill-col">
+          <h4>Backend & DB</h4>
+          <p>Node.js, Express.js, MongoDB, SQL (MySQL/PostgreSQL)</p>
+        </div>
+        <div class="skill-col">
+          <h4>Tools & Methods</h4>
+          <p>Git, GitHub, REST APIs, SEO, System Design, Unit Testing</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Featured Projects</div>
+      <div class="project-item">
+        <div class="item-header">
+          <span>MERN E-Commerce Platform</span>
+          <span>MongoDB, Express, React, Node.js</span>
+        </div>
+        <ul class="bullets">
+          <li>Constructed a secure shopping app with JWT user sessions, session validation, and database logs.</li>
+          <li>Integrated administrative control boards mapping inventory states, orders, and sales charts.</li>
+        </ul>
+      </div>
+      
+      <div class="project-item">
+        <div class="item-header">
+          <span>Task Management Board</span>
+          <span>React, Express, MongoDB, Socket.io</span>
+        </div>
+        <ul class="bullets">
+          <li>Developed a collaborative Kanban task board featuring drag-and-drop workspace triggers and cards.</li>
+          <li>Optimized site rendering behaviors resulting in reduced interface updates and latency.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Achievements</div>
+      <ul class="bullets">
+        <li><strong>MERN Stack Specialization:</strong> Engineered over 5 full-scale systems integrating client, server, and DB clusters.</li>
+        <li><strong>SEO Mastery:</strong> Built architectures scoring high performance marks on Google Lighthouse metrics.</li>
+        <li><strong>Interactive Design:</strong> Designed award-grade dark mode layouts utilizing glassmorphism and HTML5 Canvas.</li>
+      </ul>
+    </div>
+
+    <a class="btn-print" onclick="window.print()">Print / Save as PDF</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lakshay Pratap Singh - MERN Stack & Full Stack Web Developer. Building scalable, modern, and user-focused web applications. Portfolio, skills, and contact details.">
+  <meta name="author" content="Lakshay Pratap Singh">
+  <meta name="keywords" content="Lakshay Pratap Singh, MERN Stack Developer, Full Stack Developer, React Developer, Web Developer Portfolio, HARTRON Intern, Web Developer India">
+  <meta property="og:title" content="Lakshay Pratap Singh | MERN Stack & Full Stack Developer">
+  <meta property="og:description" content="Building scalable, modern, and user-focused web applications with the MERN Stack. View projects, experience, and get in touch.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lakshay Pratap Singh Portfolio">
+  
+  <title>Lakshay Pratap Singh | MERN Stack & Full Stack Developer</title>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="overflow: hidden;"> <!-- Overflow hidden until loading screen fades -->
+
+  <!-- ==========================================================================
+       LOADING SCREEN
+       ========================================================================== -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader-container">
+      <div class="loader-grid">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+      </div>
+      <div class="loader-text">INITIALIZING SYSTEM<span>_</span></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       STICKY NAVBAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo-link">
+        LAKSHAY<span>pratap singh</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active" id="nav-link-hero">Home</a>
+        <a href="#about" class="nav-link" id="nav-link-about">About</a>
+        <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
+        <a href="#experience" class="nav-link" id="nav-link-experience">Experience</a>
+        <a href="#projects" class="nav-link" id="nav-link-projects">Projects</a>
+        <a href="#achievements" class="nav-link" id="nav-link-achievements">Stats</a>
+        <a href="#contact" class="nav-link" id="nav-link-contact">Contact</a>
+      </nav>
+      
+      <div class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-glow-bg"></div>
+    
+    <div class="hero-container">
+      <div class="hero-content reveal-left">
+        <span class="hero-welcome">System Active // Welcome</span>
+        <h1 class="hero-title">Lakshay Pratap Singh</h1>
+        <div class="hero-subtitle">
+          <span class="hero-subtitle-typing"></span><span class="hero-subtitle-cursor">|</span>
+        </div>
+        <p class="hero-tagline">
+          Building scalable, modern and user-focused web applications with the MERN Stack.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+            View Projects
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="resume.html" target="_blank" class="btn btn-secondary" id="hero-btn-resume">
+            Download Resume
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+          <a href="#contact" class="btn btn-tertiary" id="hero-btn-contact">Contact Me</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual reveal-right">
+        <div class="coding-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <div class="terminal-dot red"></div>
+              <div class="terminal-dot yellow"></div>
+              <div class="terminal-dot green"></div>
+            </div>
+            <div class="terminal-title">developer.js</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line"><span class="terminal-num">01</span><span class="keyword">const</span> <span class="variable">developer</span> = {</div>
+            <div class="terminal-line"><span class="terminal-num">02</span>  name: <span class="string">"Lakshay Pratap Singh"</span>,</div>
+            <div class="terminal-line"><span class="terminal-num">03</span>  role: <span class="string">"MERN Stack Developer"</span>,</div>
+            <div class="terminal-line"><span class="terminal-num">04</span>  location: <span class="string">"Haryana, India"</span>,</div>
+            <div class="terminal-line"><span class="terminal-num">05</span>  skills: [<span class="string">"React"</span>, <span class="string">"Node"</span>, <span class="string">"Express"</span>, <span class="string">"MongoDB"</span>],</div>
+            <div class="terminal-line"><span class="terminal-num">06</span>  passionate: <span class="keyword">true</span>,</div>
+            <div class="terminal-line"><span class="terminal-num">07</span>  status: <span class="string">"HARTRON Intern"</span></div>
+            <div class="terminal-line"><span class="terminal-num">08</span>};</div>
+            <div class="terminal-line"><span class="terminal-num">09</span></div>
+            <div class="terminal-line"><span class="terminal-num">10</span><span class="comment">// Executing continuous learning...</span></div>
+            <div class="terminal-line"><span class="terminal-num">11</span><span class="className">console</span>.log(<span class="variable">developer</span>.role);</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT ME SECTION
+       ========================================================================== -->
+  <section class="about" id="about">
+    <h2 class="section-title reveal">About <span>Me</span></h2>
+    
+    <div class="about-container">
+      <div class="about-visual reveal-left">
+        <div class="about-img-box">
+          <div class="about-img-inner">
+            <img src="images/profile.jpg" alt="Lakshay Pratap Singh Profile Photo" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-content reveal-right">
+        <h3>Building Futuristic Experiences</h3>
+        <p class="subtitle">System Architect & Developer</p>
+        <p>
+          I am Lakshay Pratap Singh, a MERN Stack Developer passionate about building modern web applications and digital experiences. I specialize in creating responsive, high-performance websites and full-stack solutions using modern technologies. Currently gaining industry experience as an Intern at HARTRON Advanced Skill Center while continuously improving my development and problem-solving skills.
+        </p>
+        
+        <div class="about-facts">
+          <div class="fact-card">
+            <div class="fact-icon">📁</div>
+            <div class="fact-title">Position</div>
+            <div class="fact-desc">Web Development Intern</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🏢</div>
+            <div class="fact-title">Training</div>
+            <div class="fact-desc">HARTRON Skill Center</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">⚡</div>
+            <div class="fact-title">Core Stack</div>
+            <div class="fact-desc">MERN & SQL</div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon">🌐</div>
+            <div class="fact-title">Mission</div>
+            <div class="fact-desc">Scalable Solutions</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SKILLS SECTION
+       ========================================================================== -->
+  <section class="skills" id="skills">
+    <h2 class="section-title reveal">My <span>Skills</span></h2>
+    
+    <div class="skills-container reveal">
+      <!-- Frontend Card -->
+      <div class="skills-category">
+        <h3>
+          <svg viewBox="0 0 24 24"><path d="M12,18L8,14H11V2H13V14H16L12,18M20,18V20H4V18H20Z" /></svg>
+          Frontend Technologies
+        </h3>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML</span>
+              <span class="skill-pct">95%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-percentage="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">CSS / Tailwind CSS</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-percentage="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-percentage="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">React</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-percentage="85"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend Card -->
+      <div class="skills-category">
+        <h3>
+          <svg viewBox="0 0 24 24"><path d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z" /></svg>
+          Backend & Databases
+        </h3>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Node.js / Express.js</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-percentage="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">MongoDB</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-percentage="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">SQL</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-percentage="75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools Card -->
+      <div class="skills-category">
+        <h3>
+          <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,17 5.4,21.2 10,22.2V19C10,18.2 9.5,17.7 9,17.2C6.7,16.7 4.5,15.5 4.5,11.5C4.5,9.8 5.1,8.3 6.2,7.2C6,6.8 5.4,5.2 6.4,3.2C6.4,3.2 7.8,3.2 9.8,4.7C11.1,4.3 12.5,4.1 13.8,4.1C15.1,4.1 16.5,4.3 17.8,4.7C19.8,3.2 21.2,3.2 21.2,3.2C22.2,5.2 21.6,6.8 21.4,7.2C22.5,8.3 23.1,9.8 23.1,11.5C23.1,15.5 20.9,16.7 18.6,17.2C18.1,17.7 17.6,18.2 17.6,19V22.2C22.2,21.2 25.6,17 25.6,12A10,10 0 0,0 12,2Z" /></svg>
+          Tools & Architecture
+        </h3>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Git & GitHub</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-percentage="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">REST APIs</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-percentage="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">SEO (Search Engine Optimization)</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-percentage="80"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EXPERIENCE SECTION
+       ========================================================================== -->
+  <section class="experience" id="experience">
+    <h2 class="section-title reveal">Work <span>Experience</span></h2>
+    
+    <div class="timeline">
+      <!-- HARTRON Internship -->
+      <div class="timeline-item reveal-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-title">
+              <h3>Web Development Intern</h3>
+              <div class="company">HARTRON Advanced Skill Center</div>
+            </div>
+            <div class="timeline-date">2025 - Present</div>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Working on modern web development projects using client and server technologies.</li>
+            <li>Building responsive, highly optimized websites using industry-best practices.</li>
+            <li>Learning industry-level development methodologies, clean code structures, and debugging paradigms.</li>
+            <li>Collaborating on real-world projects and full-stack integration tasks.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECTS SECTION
+       ========================================================================== -->
+  <section class="projects" id="projects">
+    <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+    
+    <div class="project-filters reveal">
+      <button class="filter-btn active" data-filter="all">All Systems</button>
+      <button class="filter-btn" data-filter="frontend">Frontend</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+    </div>
+    
+    <div class="projects-grid reveal">
+      <!-- Project 1 -->
+      <div class="project-card" data-category="fullstack">
+        <div class="project-img-container">
+          <img src="images/mern_e_commerce.png" class="project-img" alt="MERN E-Commerce Platform Screenshot">
+          <div class="project-img-overlay"></div>
+          <div class="project-tech-badges">
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <h3>MERN E-Commerce Platform</h3>
+          <p>A comprehensive, fully featured online shopping system featuring user authentication, payment processing, product catalogs, and administrative controls.</p>
+          <div class="project-links">
+            <a href="#" class="project-link" onclick="alert('Demo server deploying soon!'); return false;">
+              Live Demo
+            </a>
+            <a href="https://github.com" target="_blank" class="project-link github-link">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,17 5.4,21.2 10,22.2V19C10,18.2 9.5,17.7 9,17.2C6.7,16.7 4.5,15.5 4.5,11.5C4.5,9.8 5.1,8.3 6.2,7.2C6,6.8 5.4,5.2 6.4,3.2C6.4,3.2 7.8,3.2 9.8,4.7C11.1,4.3 12.5,4.1 13.8,4.1C15.1,4.1 16.5,4.3 17.8,4.7C19.8,3.2 21.2,3.2 21.2,3.2C22.2,5.2 21.6,6.8 21.4,7.2C22.5,8.3 23.1,9.8 23.1,11.5C23.1,15.5 20.9,16.7 18.6,17.2C18.1,17.7 17.6,18.2 17.6,19V22.2C22.2,21.2 25.6,17 25.6,12A10,10 0 0,0 12,2Z" /></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="project-card" data-category="frontend">
+        <div class="project-img-container">
+          <img src="images/portfolio_website.png" class="project-img" alt="Portfolio Website Screenshot">
+          <div class="project-img-overlay"></div>
+          <div class="project-tech-badges">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">Vanilla CSS</span>
+            <span class="tech-badge">ES6 JS</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <h3>Futuristic Portfolio</h3>
+          <p>Premium, responsive personal landing page utilizing interactive canvas particles, keyframe animations, glassmorphism, and loading grids.</p>
+          <div class="project-links">
+            <a href="#hero" class="project-link">
+              Live Demo
+            </a>
+            <a href="https://github.com" target="_blank" class="project-link github-link">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,17 5.4,21.2 10,22.2V19C10,18.2 9.5,17.7 9,17.2C6.7,16.7 4.5,15.5 4.5,11.5C4.5,9.8 5.1,8.3 6.2,7.2C6,6.8 5.4,5.2 6.4,3.2C6.4,3.2 7.8,3.2 9.8,4.7C11.1,4.3 12.5,4.1 13.8,4.1C15.1,4.1 16.5,4.3 17.8,4.7C19.8,3.2 21.2,3.2 21.2,3.2C22.2,5.2 21.6,6.8 21.4,7.2C22.5,8.3 23.1,9.8 23.1,11.5C23.1,15.5 20.9,16.7 18.6,17.2C18.1,17.7 17.6,18.2 17.6,19V22.2C22.2,21.2 25.6,17 25.6,12A10,10 0 0,0 12,2Z" /></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 3 -->
+      <div class="project-card" data-category="fullstack">
+        <div class="project-img-container">
+          <img src="images/task_management.png" class="project-img" alt="Task Management System Screenshot">
+          <div class="project-img-overlay"></div>
+          <div class="project-tech-badges">
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <h3>Task Management System</h3>
+          <p>Kanban-style collaborative board mapping, tasks management, progress metrics, notifications, and real-time updates for software engineering teams.</p>
+          <div class="project-links">
+            <a href="#" class="project-link" onclick="alert('Task dashboard demo deploying soon!'); return false;">
+              Live Demo
+            </a>
+            <a href="https://github.com" target="_blank" class="project-link github-link">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,17 5.4,21.2 10,22.2V19C10,18.2 9.5,17.7 9,17.2C6.7,16.7 4.5,15.5 4.5,11.5C4.5,9.8 5.1,8.3 6.2,7.2C6,6.8 5.4,5.2 6.4,3.2C6.4,3.2 7.8,3.2 9.8,4.7C11.1,4.3 12.5,4.1 13.8,4.1C15.1,4.1 16.5,4.3 17.8,4.7C19.8,3.2 21.2,3.2 21.2,3.2C22.2,5.2 21.6,6.8 21.4,7.2C22.5,8.3 23.1,9.8 23.1,11.5C23.1,15.5 20.9,16.7 18.6,17.2C18.1,17.7 17.6,18.2 17.6,19V22.2C22.2,21.2 25.6,17 25.6,12A10,10 0 0,0 12,2Z" /></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 4 -->
+      <div class="project-card" data-category="frontend">
+        <div class="project-img-container">
+          <img src="images/seo_business_website.png" class="project-img" alt="SEO Optimized Business Website Screenshot">
+          <div class="project-img-overlay"></div>
+          <div class="project-tech-badges">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">Tailwind CSS</span>
+            <span class="tech-badge">SEO Opt</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <h3>SEO Optimized Business Site</h3>
+          <p>Clean corporate site scoring high marks in Google Lighthouse metrics, optimized with semantic HTML and accessibility enhancements.</p>
+          <div class="project-links">
+            <a href="#" class="project-link" onclick="alert('Business site demo loading...'); return false;">
+              Live Demo
+            </a>
+            <a href="https://github.com" target="_blank" class="project-link github-link">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,17 5.4,21.2 10,22.2V19C10,18.2 9.5,17.7 9,17.2C6.7,16.7 4.5,15.5 4.5,11.5C4.5,9.8 5.1,8.3 6.2,7.2C6,6.8 5.4,5.2 6.4,3.2C6.4,3.2 7.8,3.2 9.8,4.7C11.1,4.3 12.5,4.1 13.8,4.1C15.1,4.1 16.5,4.3 17.8,4.7C19.8,3.2 21.2,3.2 21.2,3.2C22.2,5.2 21.6,6.8 21.4,7.2C22.5,8.3 23.1,9.8 23.1,11.5C23.1,15.5 20.9,16.7 18.6,17.2C18.1,17.7 17.6,18.2 17.6,19V22.2C22.2,21.2 25.6,17 25.6,12A10,10 0 0,0 12,2Z" /></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 5 -->
+      <div class="project-card" data-category="fullstack">
+        <div class="project-img-container">
+          <img src="images/full_stack_dashboard.png" class="project-img" alt="Full Stack Dashboard Screenshot">
+          <div class="project-img-overlay"></div>
+          <div class="project-tech-badges">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Chart.js</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <h3>Full Stack Admin Dashboard</h3>
+          <p>Real-time telemetry and management portal. Graphs user signups, logs, server CPU limits, database metrics, and API requests.</p>
+          <div class="project-links">
+            <a href="#" class="project-link" onclick="alert('Admin analytics loading...'); return false;">
+              Live Demo
+            </a>
+            <a href="https://github.com" target="_blank" class="project-link github-link">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,17 5.4,21.2 10,22.2V19C10,18.2 9.5,17.7 9,17.2C6.7,16.7 4.5,15.5 4.5,11.5C4.5,9.8 5.1,8.3 6.2,7.2C6,6.8 5.4,5.2 6.4,3.2C6.4,3.2 7.8,3.2 9.8,4.7C11.1,4.3 12.5,4.1 13.8,4.1C15.1,4.1 16.5,4.3 17.8,4.7C19.8,3.2 21.2,3.2 21.2,3.2C22.2,5.2 21.6,6.8 21.4,7.2C22.5,8.3 23.1,9.8 23.1,11.5C23.1,15.5 20.9,16.7 18.6,17.2C18.1,17.7 17.6,18.2 17.6,19V22.2C22.2,21.2 25.6,17 25.6,12A10,10 0 0,0 12,2Z" /></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ACHIEVEMENTS SECTION
+       ========================================================================== -->
+  <section class="achievements" id="achievements">
+    <h2 class="section-title reveal">Achievements & <span>Telemetry</span></h2>
+    
+    <div class="achievements-grid reveal">
+      <div class="achievement-card">
+        <div class="achievement-icon">⚡</div>
+        <h3>MERN Stack</h3>
+        <p>Dynamic applications built with MongoDB, Express, React, and Node.js.</p>
+      </div>
+      
+      <div class="achievement-card">
+        <div class="achievement-icon">🛡️</div>
+        <h3>Full Stack Web</h3>
+        <p>Creating responsive layouts with secure backend connections and APIs.</p>
+      </div>
+      
+      <div class="achievement-card">
+        <div class="achievement-icon">📈</div>
+        <h3>SEO Optimized</h3>
+        <p>Structuring clean semantic HTML layouts following modern web standards.</p>
+      </div>
+      
+      <div class="achievement-card">
+        <div class="achievement-icon">🎨</div>
+        <h3>Modern UI/UX</h3>
+        <p>Premium dark grids, cybernetic animations, glassmorphism panel boards.</p>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-icon">💾</div>
+        <h3>Databases</h3>
+        <p>Designing structured tables, indexing queries, and integrating SQL.</p>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-icon">📱</div>
+        <h3>Responsive Design</h3>
+        <p>Mobile-first stylesheets scaling from small devices to large screens.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GITHUB SECTION
+       ========================================================================== -->
+  <section class="github-section" id="github">
+    <h2 class="section-title reveal">Coding <span>Activity</span></h2>
+    
+    <div class="github-mockup reveal">
+      <div class="github-header">
+        <div class="github-profile">
+          <img src="images/profile.jpg" class="github-avatar" alt="Lakshay Pratap Singh GitHub Avatar">
+          <div class="github-user-info">
+            <h4>lakshay-pratap</h4>
+            <p>Full Stack Engineer // HARTRON Intern</p>
+          </div>
+        </div>
+        <div class="github-stats-row">
+          <div class="github-stat">
+            <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" /></svg>
+            <span>42 Stars</span>
+          </div>
+          <div class="github-stat">
+            <svg viewBox="0 0 24 24"><path d="M12,2C6.47,2 2,6.5 2,12C2,15.58 4.47,18.57 7.85,19.64C7.88,19.64 7.9,19.64 7.92,19.64C8.39,19.64 8.78,19.25 8.78,18.78V17.08C8.78,16.5 8.58,16.1 8.35,15.9C10,15.7 11.73,15.1 11.73,12.2C11.73,11.4 11.45,10.7 11,10.2C11.1,10 11.4,9.1 10.9,8C10.9,8 10.3,7.8 8.8,8.8C8.2,8.6 7.6,8.5 7,8.5C6.4,8.5 5.8,8.6 5.2,8.8C3.7,7.8 3.1,8 3.1,8C2.6,9.1 2.9,10 3,10.2C2.5,10.7 2.2,11.4 2.2,12.2C2.2,15.1 3.9,15.7 5.6,15.9C5.4,16.1 5.2,16.4 5.1,16.8C4.6,17 3.5,17.3 2.9,16.2C2.9,16.2 2.5,15.4 1.7,15.4C1.7,15.4 0.9,15.4 1.7,15.9C1.7,15.9 2.2,16.1 2.6,17.1C2.6,17.1 3.1,18.6 5.1,18.2V18.78C5.1,19.25 5.5,19.64 5.96,19.64C5.98,19.64 6,19.64 6.03,19.64C9.42,18.57 11.9,15.58 11.9,12C11.9,6.5 7.42,2 12,2Z" /></svg>
+            <span>12 Repositories</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="github-body">
+        <div class="github-intro">
+          <h3>Coding Matrix</h3>
+          <p>Analyzing commits, integrations, and logic loops pushed to repositories.</p>
+        </div>
+        
+        <!-- Contribution Graph Mockup -->
+        <div class="contribution-graph-box">
+          <div class="graph-header">
+            <span>2,410 contributions in the last year</span>
+            <span>Jun 2025 - Jun 2026</span>
+          </div>
+          <div class="contribution-grid" id="contribution-grid">
+            <!-- Programmatically populated by JavaScript or built in HTML -->
+            <!-- We build a static beautiful sample map of colored blocks -->
+            <script>
+              // Script is inline just to populate the grid cells dynamically with randomized commits colors
+              document.addEventListener('DOMContentLoaded', () => {
+                const grid = document.getElementById('contribution-grid');
+                if(!grid) return;
+                let html = '';
+                for (let i = 0; i < 53; i++) {
+                  html += '<div class="grid-col">';
+                  for (let j = 0; j < 7; j++) {
+                    // Random level weights (0 to 4)
+                    let lvl = 0;
+                    const r = Math.random();
+                    if(r > 0.85) lvl = 4;
+                    else if(r > 0.7) lvl = 3;
+                    else if(r > 0.5) lvl = 2;
+                    else if(r > 0.35) lvl = 1;
+                    html += `<div class="grid-cell lvl-${lvl}" title="Activity Level: ${lvl}"></div>`;
+                  }
+                  html += '</div>';
+                }
+                grid.innerHTML = html;
+              });
+            </script>
+          </div>
+          <div class="graph-footer">
+            <span>Learn how we count contributions</span>
+            <div class="graph-legend">
+              <span>Less</span>
+              <div class="grid-cell lvl-0"></div>
+              <div class="grid-cell lvl-1"></div>
+              <div class="grid-cell lvl-2"></div>
+              <div class="grid-cell lvl-3"></div>
+              <div class="grid-cell lvl-4"></div>
+              <span>More</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="repo-grid">
+          <!-- Repo 1 -->
+          <div class="repo-card">
+            <div class="repo-title-row">
+              <span class="repo-name">
+                <svg viewBox="0 0 24 24"><path d="M19,15H15A3,3 0 0,1 12,18A3,3 0 0,1 9,15H5V5H19M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" /></svg>
+                mern-shop-gateway
+              </span>
+            </div>
+            <p class="repo-desc">Server-side e-commerce core integrations with JWT auth and Stripe controllers.</p>
+            <div class="repo-footer">
+              <span class="repo-lang"><span class="lang-dot js"></span>JavaScript</span>
+              <div class="repo-stats">
+                <span class="repo-stat-item"><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" /></svg> 18</span>
+                <span class="repo-stat-item"><svg viewBox="0 0 24 24"><path d="M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18M20,12A8,8 0 1,0 12,20A8,8 0 0,0 20,12Z" /></svg> 5</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Repo 2 -->
+          <div class="repo-card">
+            <div class="repo-title-row">
+              <span class="repo-name">
+                <svg viewBox="0 0 24 24"><path d="M19,15H15A3,3 0 0,1 12,18A3,3 0 0,1 9,15H5V5H19M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" /></svg>
+                react-kanban-flow
+              </span>
+            </div>
+            <p class="repo-desc">Interactive frontend planning board with drag-and-drop workspace triggers.</p>
+            <div class="repo-footer">
+              <span class="repo-lang"><span class="lang-dot react"></span>React</span>
+              <div class="repo-stats">
+                <span class="repo-stat-item"><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" /></svg> 14</span>
+                <span class="repo-stat-item"><svg viewBox="0 0 24 24"><path d="M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18M20,12A8,8 0 1,0 12,20A8,8 0 0,0 20,12Z" /></svg> 2</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Repo 3 -->
+          <div class="repo-card">
+            <div class="repo-title-row">
+              <span class="repo-name">
+                <svg viewBox="0 0 24 24"><path d="M19,15H15A3,3 0 0,1 12,18A3,3 0 0,1 9,15H5V5H19M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" /></svg>
+                express-query-sql
+              </span>
+            </div>
+            <p class="repo-desc">Relational DB integration hooks and parameter sanitation libraries.</p>
+            <div class="repo-footer">
+              <span class="repo-lang"><span class="lang-dot node"></span>NodeJS</span>
+              <div class="repo-stats">
+                <span class="repo-stat-item"><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" /></svg> 10</span>
+                <span class="repo-stat-item"><svg viewBox="0 0 24 24"><path d="M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18M20,12A8,8 0 1,0 12,20A8,8 0 0,0 20,12Z" /></svg> 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section class="contact" id="contact">
+    <h2 class="section-title reveal">Contact <span>Me</span></h2>
+    
+    <div class="contact-container">
+      <div class="contact-info reveal-left">
+        <h3>Initiate Connection</h3>
+        <p>
+          I am currently open to internship discussions, full-stack positions, or open-source collaborations. Fill out the console transmission form, or reach out through direct communication channels.
+        </p>
+        
+        <div class="contact-methods">
+          <div class="contact-method-card">
+            <div class="method-icon">✉</div>
+            <div class="method-details">
+              <h4>Direct Email</h4>
+              <a href="mailto:partaplakshay03@gmail.com">partaplakshay03@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-method-card">
+            <div class="method-icon">📞</div>
+            <div class="method-details">
+              <h4>Secure Line</h4>
+              <p><a href="tel:+919817480958">+91 98174 80958</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-method-card">
+            <div class="method-icon">📍</div>
+            <div class="method-details">
+              <h4>Location Matrix</h4>
+              <p>Haryana, India</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="social-links">
+          <a href="https://github.com/lakshay-pratap" target="_blank" class="social-icon github" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,17 5.4,21.2 10,22.2V19C10,18.2 9.5,17.7 9,17.2C6.7,16.7 4.5,15.5 4.5,11.5C4.5,9.8 5.1,8.3 6.2,7.2C6,6.8 5.4,5.2 6.4,3.2C6.4,3.2 7.8,3.2 9.8,4.7C11.1,4.3 12.5,4.1 13.8,4.1C15.1,4.1 16.5,4.3 17.8,4.7C19.8,3.2 21.2,3.2 21.2,3.2C22.2,5.2 21.6,6.8 21.4,7.2C22.5,8.3 23.1,9.8 23.1,11.5C23.1,15.5 20.9,16.7 18.6,17.2C18.1,17.7 17.6,18.2 17.6,19V22.2C22.2,21.2 25.6,17 25.6,12A10,10 0 0,0 12,2Z" /></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon linkedin" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24"><path d="M19,0h-14c-2.761,0-5,2.239-5,5v14c0,2.761,2.239,5,5,5h14c2.762,0,5-2.239,5-5v-14c0-2.761-2.238-5-5-5zM8,19h-3v-11h3v11zM6.5,6.732c-0.966,0-1.75-0.79-1.75-1.764s0.784-1.764,1.75-1.764 1.75,0.79,1.75,1.764-0.783,1.764-1.75,1.764zM20,19h-3v-5.604c0-3.368-4-3.113-4,0v5.604h-3v-11h3v1.765c1.396-2.586,7-2.777,7,2.476v6.759z" /></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-icon instagram" aria-label="Instagram profile">
+            <svg viewBox="0 0 24 24"><path d="M12,2.163c3.204,0,3.584,0.012,4.85,0.07c3.252,0.148,4.771,1.691,4.919,4.919c0.058,1.265,0.069,1.645,0.069,4.849c0,3.205-0.012,3.584-0.069,4.849c-0.149,3.225-1.664,4.771-4.919,4.919c-1.266,0.058-1.644,0.07-4.85,0.07c-3.204,0-3.584-0.012-4.849-0.07c-3.26-0.148-4.771-1.699-4.919-4.92c-0.058-1.265-0.07-1.644-0.07-4.849c0-3.204,0.013-3.583,0.07-4.849c0.149-3.227,1.664-4.771,4.919-4.919c1.266-0.057,1.645-0.069,4.849-0.069zM12,0C8.741,0,8.333,0.014,7.053,0.072C2.695,0.272,0.273,2.69,0.073,7.051C0.014,8.333,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.2,4.358,2.618,6.78,6.98,6.98C8.333,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072c4.354-0.2,6.782-2.618,6.979-6.98C23.986,15.668,24,15.259,24,12c0-3.259-0.014-3.668-0.072-4.948c-0.2-4.358-2.617-6.78-6.979-6.98C15.668,0.014,15.259,0,12,0zM12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162c3.403,0,6.162-2.759,6.162-6.162C18.162,8.597,15.403,5.838,12,5.838zM12,16c-2.209,0-4-1.79-4-4c0-2.209,1.791-4,4-4c2.209,0,4,1.791,4,4C16,14.21,14.209,16,12,16zM18.406,4.21c-0.794,0-1.438,0.644-1.438,1.438c0,0.793,0.644,1.437,1.438,1.437c0.793,0,1.438-0.644,1.438-1.437C19.844,4.854,19.2,4.21,18.406,4.21z" /></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="contact-form-card reveal-right">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="form-name" class="form-label">Full Name</label>
+            <input type="text" id="form-name" class="form-control" placeholder="Identify yourself..." required>
+          </div>
+          
+          <div class="form-group">
+            <label for="form-email" class="form-label">Email Address</label>
+            <input type="email" id="form-email" class="form-control" placeholder="Enter communication link..." required>
+          </div>
+
+          <div class="form-group">
+            <label for="form-phone" class="form-label">Phone Number (Optional)</label>
+            <input type="tel" id="form-phone" class="form-control" placeholder="Provide dial code...">
+          </div>
+          
+          <div class="form-group">
+            <label for="form-message" class="form-label">Transmission Message</label>
+            <textarea id="form-message" class="form-control" placeholder="Type message payload..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block" style="width: 100%;" id="form-submit-btn">
+            Send Message Payload
+          </button>
+          
+          <div class="form-message-status"></div>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Futuristic Messages Console (Local Database Log) -->
+    <div class="transmissions-console reveal" id="transmissions-console" style="margin-top: 4rem;">
+      <div class="console-header">
+        <h3>🛰️ Received Transmissions Database (Local Logs)</h3>
+        <button id="clear-transmissions-btn" class="btn btn-secondary" style="padding: 0.4rem 1.2rem; font-size: 0.85rem; border-radius: 6px;">Clear Database</button>
+      </div>
+      <div class="console-body" id="transmissions-log">
+        <p class="no-transmissions">No incoming transmissions recorded in local database.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="footer-logo">LAKSHAY PRATAP SINGH</div>
+    <p>Designed & Developed with <span class="footer-heart">♥</span> by Lakshay Pratap Singh</p>
+    <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">© 2026. All Systems Operational.</p>
+  </footer>
+
+  <!-- ==========================================================================
+       SCROLL TO TOP BUTTON
+       ========================================================================== -->
+  <button class="scroll-top-btn" aria-label="Scroll to Top" id="scroll-top-btn">
+    <svg viewBox="0 0 24 24"><path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" /></svg>
+  </button>
+
+  <!-- Custom Controller JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
